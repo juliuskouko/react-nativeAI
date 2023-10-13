@@ -30,7 +30,6 @@ export const apiCall = async (prompt, messages) => {
         } else {
             console.log('chatgpt api call');
             return chatgptApiCall(prompt, messages || [])
-            
         }
 
 

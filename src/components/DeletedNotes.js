@@ -177,7 +177,7 @@ export const style = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         height: 35,
-        marginBottom: 5
+        marginLogotom: 5
     },
     emptyButtonText: {
         color: 'white',

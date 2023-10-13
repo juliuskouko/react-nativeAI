@@ -76,16 +76,19 @@ const SignUpScreen = () => {
       {isAvatarMenu && (
         <>
           {/* list of avatars sections */}
-          <View
-            style={{
-              position: "absolute",
+          <View 
+            
+          >
+            <ScrollView style={{
+              
+              position: "relative",
               top: 0,
               left: 0,
               right: 0,
-              bottom: 0,
-            }}
-          >
-            <ScrollView>
+              Logotom: 0,
+              marginTop: -340,
+              
+            }}>
               <BlurView
                 style={{
                   flex: 1,
@@ -93,7 +96,8 @@ const SignUpScreen = () => {
                   flexDirection: "row",
                   flexWrap: "wrap",
                   alignItems: "center",
-                  justifyContent: "space-evenly",
+                  justifyContent: "space-evenly", 
+                  paddingTop: 60,
                 }}
                 tint="light"
                 intensity={40}
@@ -132,14 +136,14 @@ const SignUpScreen = () => {
           width: "100%",
           backgroundColor: "white",
           borderTopLeftRadius: 90,
-          marginTop: -screenHeight * 0.22,
+          marginTop: -screenHeight * 0.12,
           alignItems: "center",
           justifyContent: "start",
           padding: 16,
-          paddingBottom: 0,
+          paddingLogotom: 0,
         }}
       >
-        <Image source={Logo} style={{ width: 64, height: 64 }} resizeMode="contain" />
+        {/* <Image source={Logo} style={{ width: 64, height: 64 }} resizeMode="contain" /> */}
 
         <Text style={{ paddingVertical: 8, fontSize: 24, fontWeight: "bold", color: "primary" }}>
           Join with us!
@@ -197,7 +201,7 @@ const SignUpScreen = () => {
             setStatValue={setEmail}
             setGetEmailValidationStatus={setGetEmailValidationStatus}
           />
-          
+
 
           {/* password */}
           <UserTextInput
@@ -213,7 +217,7 @@ const SignUpScreen = () => {
               width: "100%",
               padding: 8,
               borderRadius: 8,
-              backgroundColor: "green",
+              backgroundColor: "#0194b6",
               marginTop: 16,
               alignItems: "center",
             }}
@@ -242,6 +246,11 @@ const SignUpScreen = () => {
 };
 
 export default SignUpScreen;
+
+
+
+
+
 
 
 

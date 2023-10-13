@@ -1219,11 +1219,6 @@
   resolved "https://registry.npmjs.org/@eva-design/processor/-/processor-2.2.0.tgz"
   integrity sha512-fEvjvilmF/R9dqXDiMoaoXxrPIb5s1APVXbacXKAxjlWl231rzOxc5sdTtJPoFTTEon5KeaKwLHtbQvz5eVvIA==
 
-"@expo/vector-icons@^13.0.0":
-  version "13.0.0"
-  resolved "https://registry.npmjs.org/@expo/vector-icons/-/vector-icons-13.0.0.tgz"
-  integrity sha512-TI+l71+5aSKnShYclFa14Kum+hQMZ86b95SH6tQUG3qZEmLTarvWpKwqtTwQKqvlJSJrpFiSFu3eCuZokY6zWA==
-
 "@firebase/analytics-compat@0.2.6":
   version "0.2.6"
   resolved "https://registry.npmjs.org/@firebase/analytics-compat/-/analytics-compat-0.2.6.tgz"
@@ -5271,7 +5266,7 @@ joi@^17.2.1:
 js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
-  integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
+  integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvLogoOIEgEhaLOynBS9g==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -6598,7 +6593,7 @@ react-native-safe-area-context@^4.7.2:
 
 react-native-screens@^3.25.0:
   version "3.25.0"
-  resolved "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.25.0.tgz"
+  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.25.0.tgz#cf45e271ce733c9cf782fef8c9b3eb9e53faf01d"
   integrity sha512-TSC2Ad0hh763I8QT6XxMsPXAagQ+RawDSdFtKRvIz9fCYr96AjRwwaqmYivbqlDywOgcRBkIVynkFtp0ThmlYw==
   dependencies:
     react-freeze "^1.0.0"

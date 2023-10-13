@@ -7,10 +7,11 @@ import {
 } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { Entypo, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { firebaseAuth } from "../config/firebase.config";
 import { SET_USER_NULL } from "../context/actions/userActions";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import Entypo from 'react-native-vector-icons/Entypo';
 
 const ProfileScreen = () => {
   const navigation = useNavigation();
@@ -101,9 +102,7 @@ const ProfileScreen = () => {
         <View className="w-full flex-row items-center justify-between">
           <TouchableOpacity className="w-24 h-24 m-1 rounded-xl bg-gray-300 overflow-hidden">
             <Image
-              source={{
-                uri: "https://cdn.pixabay.com/photo/2023/06/29/10/33/lion-8096155_1280.png",
-              }}
+              source={require('../../assets/images/DanceBot.gif')}
               className="w-full h-full"
               resizeMode="cover"
             />
@@ -111,9 +110,7 @@ const ProfileScreen = () => {
 
           <TouchableOpacity className="w-24 h-24 m-1 rounded-xl bg-gray-300 overflow-hidden">
             <Image
-              source={{
-                uri: "https://cdn.pixabay.com/photo/2023/07/02/18/49/cup-8102791_640.jpg",
-              }}
+              source={require('../../assets/images/AI.jpg')}
               className="w-full h-full"
               resizeMode="cover"
             />
@@ -121,9 +118,7 @@ const ProfileScreen = () => {
 
           <TouchableOpacity className="w-24 h-24 m-1 rounded-xl bg-gray-300 overflow-hidden relative">
             <Image
-              source={{
-                uri: "https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_640.jpg",
-              }}
+              source={require('../../assets/images/AI2.jpeg')}
               className="w-full h-full"
               resizeMode="cover"
             />

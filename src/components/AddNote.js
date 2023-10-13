@@ -5,33 +5,52 @@ import { IOS } from 'nativewind/dist/utils/selector';
 import { TouchableWithoutFeedback } from '@ui-kitten/components/devsupport';
 // import { TextInput } from 'react-native-paper';
 
-export default function AddNote({navigation, ...props}) {
+export default function AddNote({ navigation, ...props }) {
   return (
     <ScrollView>
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        // behavior='padding'
+      // behavior='padding'
       >
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-          <View style={{padding: 20, justifyContent: 'space-around'}}>
-            <TextInput 
-              style={[styles.input]} 
-              placeholder='Type here...' 
+          <View style={{ marginTop: 40, padding: 20, justifyContent: 'space-around' }}>
+            <View className="w-full flex-row items-center justify-between px-4 py-2">
+
+              <TouchableOpacity onPress={() => navigation.navigate("Notes")}>
+                <Text style={{ fontSize: 20, fontWeight: 700, color: '#00A36C' }}>Back</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress={() => {
+                if (props.note === '') {
+                  Alert.alert('Please Type Something')
+                } else {
+                  props.handleNote();
+                  navigation.navigate('Notes')
+                }
+              }}>
+                <Text style={{ fontSize: 20, fontWeight: 700, color: '#00A36C' }}>Done</Text>
+              </TouchableOpacity>
+
+
+            </View>
+            <TextInput
+              style={[styles.input]}
+              placeholder='Type here...'
               multiline={true}
-              value={props.note} 
+              value={props.note}
               onChangeText={(text) => props.setNote(text)}
             />
 
-            <TouchableOpacity style={styles.button} onPress={() => {
-              if(props.note === ''){
+            {/* <TouchableOpacity onPress={() => {
+              if (props.note === '') {
                 Alert.alert('Please Type Something')
-              }else{
+              } else {
                 props.handleNote();
                 navigation.navigate('Notes')
               }
             }}>
-              <Text style={styles.buttonText}>Done</Text>
-            </TouchableOpacity>
+              <Text style={{ fontSize: 20, fontWeight: 700 }}>Done</Text>
+            </TouchableOpacity> */}
           </View>
         </TouchableWithoutFeedback>
       </KeyboardAvoidingView>

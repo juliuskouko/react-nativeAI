@@ -28,7 +28,7 @@ export default function OnboardingScreen() {
       <Onboarding
             onDone={handleDone}
             onSkip={handleDone}
-            // bottomBarHighlight={false}
+            // LogotomBarHighlight={false}
             DoneButtonComponent={doneButton}
             containerStyles={{paddingHorizontal: 15}}
             pages={[
@@ -82,6 +82,6 @@ const styles = StyleSheet.create({
         padding: 20,
         // backgroundColor: 'white',
         // borderTopLeftRadius: '100%',
-        // borderBottomLeftRadius: '100%'
+        // borderLogotomLeftRadius: '100%'
     }
 })

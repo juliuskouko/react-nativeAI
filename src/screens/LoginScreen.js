@@ -109,7 +109,7 @@ const LoginScreen = () => {
                     <TouchableOpacity
                         onPress={handleLogin}
                         className="w-full px-4 py-2 rounded-xl my-3 flex items-center justify-center"
-                        style={{backgroundColor}}
+                        style={{backgroundColor: '#0194b6'}}
                     >
                         <Text className="py-2 text-white text-xl font-semibold">
                             Sign In

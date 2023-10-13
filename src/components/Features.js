@@ -9,6 +9,11 @@ import {
 export default function Features({ style }) {
   return (
     <View style={[s`space-y-4 w-${wp(4)}`, style]}>
+      {/* <Image
+        className="rounded-full"
+        source={require('../../assets/images/Logo.gif')}
+        style={{ width: hp(20), height: hp(20),}}
+      /> */}
       <Text
         style={[s`font-semibold text-gray-700 mb-4`, {fontSize: wp('6.5%')}]}>
         Features
@@ -72,7 +77,7 @@ export default function Features({ style }) {
         <Text
           style={[s`font-medium text-gray-700 py-2`, {fontSize: wp('3.8%')}]}>
           A powerful voice assistant with the abilities of ChatGPT and Dall-E,
-          providing you the best of both worlds.
+          providing you the best of Logoh worlds.
         </Text>
       </View>
     </View>

@@ -83,33 +83,7 @@ export default function Notes({ navigation, ...props }) {
 
     return (
         <SafeAreaView className="flex-1 m-2" style={[style.notesContainer]}>
-            {/* <View style={styles.headingContainer}>
-                <Text style={styles.heading}>Your notes ...</Text>
-
-                <View style={{ flexDirection: 'row' }}>
-                    <TouchableOpacity style={[styles.button, { marginLeft: 40 }]} onPress={() =>navigation.navigate('DeletedNotes')}>
-                        <IconRegistry icons={EvaIconsPack} />
-                        <ApplicationProvider {...eva} theme={eva.light}>
-                            <Icon name='trash-2-outline' fill='white' style={{ width: 25, height: 50 }} />
-                        </ApplicationProvider>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={[styles.button]}>
-                        <IconRegistry icons={EvaIconsPack} />
-                        <ApplicationProvider {...eva} theme={eva.light}>
-                            <Icon name='plus-outline' fill='white' style={{ width: 25, height: 50 }} />
-                        </ApplicationProvider>
-                    </TouchableOpacity>
-                </View>
-            </View>
-
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={{ fontWeight: '700', fontSize: 18, color: Style.color }}>
-                    Total: {props.notes.length}
-                </Text>
-            </View>
-
-            <View style={styles.divider}></View> */}
+            
 
             <View className="w-full flex-row items-center justify-between px-4 py-2">
                 <TouchableOpacity onPress={() => navigation.navigate("WelcomeScreen")}>
@@ -117,7 +91,7 @@ export default function Notes({ navigation, ...props }) {
                 </TouchableOpacity>
                 
 
-            <Text style={{fontSize: 30, fontWeight: 'bold', color: 'white'}}>Note</Text>
+            {/* <Text style={{fontSize: 30, fontWeight: 'bold', color: 'green'}}>Note</Text> */}
 
                 <TouchableOpacity
                     onPress={() => navigation.navigate("ProfileScreen")}
@@ -131,7 +105,7 @@ export default function Notes({ navigation, ...props }) {
                 </TouchableOpacity>
             </View>
 
-            <View style={[style.searchContainer, { marginTop: 20, marginBottom: 20 }]}>
+            <View style={[style.searchContainer, { marginTop: 20, marginLogotom: 20 }]}>
                 <TextInput
                     placeholder='Search...'
                     placeholderTextColor={Style.color}
@@ -223,7 +197,7 @@ export const style = StyleSheet.create({
 
         paddingTop: 10,
         paddingHorizontal: 20,
-        marginBottom: 70,
+        marginLogotom: 70,
         opacity: 0.9
     },
     heading: {
@@ -236,10 +210,10 @@ export const style = StyleSheet.create({
         height: 2,
         backgroundColor: Style.color,
         marginTop: 5,
-        marginBottom: 5
+        marginLogotom: 5
     },
     item: {
-        marginBottom: 20,
+        marginLogotom: 20,
         padding: 15,
         color: 'black',
         opacity: 0.8,
@@ -281,7 +255,7 @@ export const style = StyleSheet.create({
         fontWeight: '800'
     },
     scrollView: {
-        marginBottom: 70
+        marginLogotom: 70
     },
     notes: {
         flexDirection: 'row',
